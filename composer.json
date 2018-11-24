@@ -1,0 +1,21 @@
+{
+  "name": "modulusphp/filesystem",
+  "description": "Filesystem component for modulusPHP",
+  "version": "1.9.0",
+  "license": "MIT",
+  "type": "package",
+  "authors": [{
+    "name": "Donald Pakkies",
+    "email": "donaldpakkies@gmail.com"
+  }],
+  "require": {
+    "modulusphp/support": "^1.9.2",
+    "modulusphp/http": "^1.9.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Modulus\\Filesystem\\": ""
+    }
+  },
+  "minimum-stability": "stable"
+}
