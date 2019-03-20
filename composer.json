@@ -1,7 +1,7 @@
 {
   "name": "modulusphp/filesystem",
-  "description": "Filesystem component for modulusPHP",
-  "version": "1.9.0.1",
+  "description": "Filesystem component for Modulus",
+  "version": "1.9.0.2",
   "license": "MIT",
   "type": "package",
   "authors": [{
