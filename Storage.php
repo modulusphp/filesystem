@@ -3,11 +3,14 @@
 namespace Modulus\Filesystem;
 
 use Modulus\Http\Rest;
+use Modulus\Support\Extendable;
 use Modulus\Support\Filesystem;
 use Modulus\Filesystem\Exceptions\DiskNotFoundException;
 
 class Storage
 {
+  use Extendable;
+
   /**
    * $disk
    *
@@ -156,5 +159,25 @@ class Storage
   public function download(string $file, ?string $name = null, ?array $headers = [])
   {
     return Rest::download(self::url($file), $name, $headers);
+  }
+
+  /**
+   * Get storage path
+   *
+   * @return string
+   */
+  public function getPath()
+  {
+    return $this->path;
+  }
+
+  /**
+   * Get storage disk
+   *
+   * @return string
+   */
+  public function getDisk()
+  {
+    return $this->disk;
   }
 }
